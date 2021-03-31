@@ -78,9 +78,9 @@ def relatorio(nomes, consumosMega, percentuais):
     if (len(nomes) == len(consumosMega) == len(percentuais)):
         open('relatorio.txt', 'a')
         arquivo = open('relatorio.txt', 'w')
-        arquivo.write('ACME Inc.               Uso do espaço em disco pelos usuários')
+        arquivo.write('ACME Inc.               Uso do espaco em disco pelos usuarios')
         arquivo.write(' ------------------------------------------------------------------ \n')
-        arquivo.write('Nr.  Usuário        Espaço utilizado     % do uso\n')
+        arquivo.write('Nr.  Usuario        Espaco utilizado     % do uso\n')
 
         for i in range(len(nomes)):
             arquivo.write(f'{str(i + 1)}\
